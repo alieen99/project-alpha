@@ -1,0 +1,26 @@
+.title {
+    margin: 0 0 5%;
+}
+
+.subtitle {
+    margin: 2.5% 2% 5%;
+}
+
+@media screen and (max-width:479px) {
+    .title {
+        font-size: 12vw;
+    }
+    .subtitle {
+        font-size: 5vw;
+        margin-bottom: 2vw;
+    }
+}
+
+@media screen and (max-height:390px) {
+    .subtitle {
+        margin: 0 0 2%;
+    }
+    .title {
+        margin: 0;
+    }
+}
