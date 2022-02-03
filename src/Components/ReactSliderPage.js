@@ -108,7 +108,6 @@ function (_React$Component) {
     };
 
     _this.onTouchStart = function (e) {
-      e.preventDefault();
 
       if (e.type === 'touchstart' || e.type === 'touchmove' || e.type === 'touchend' || e.type === 'touchcancel') {
         var touch = e.touches[0] || e.changedTouches[0];
@@ -178,16 +177,6 @@ function (_React$Component) {
 
   _proto.render = function render() {
     var _this2 = this;
-
-    var sliderIndicators = React.createElement("div", {
-      className: "slider__indicators"
-    }, this.props.children.map(function (_, index) {
-      return React.createElement("div", {
-        key: index,
-        className: "slider__indicator" + (_this2.state.currentSlide === index + 1 ? ' slider__indicator--active' : ''),
-        "data-slider-target-index": index + 1
-      });
-    }));
     return React.createElement(React.Fragment, null, React.createElement("div", {
       ref: this.sliderRef,
       className: "slides slider__container",
@@ -199,7 +188,7 @@ function (_React$Component) {
       onWheel: this.onMouseWheel
     }, React.Children.map(this.props.children, function (child, index) {
       return _this2.modifyChildren(child, index);
-    })), sliderIndicators);
+    })));
   };
 
   return SliderPage;

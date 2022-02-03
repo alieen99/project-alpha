@@ -9,10 +9,10 @@ import Scroll from './Components/Scroll';
 import "./Components/Navbar.css"
 import TitleSections from './Sections/TitleSection';
 import Countdown from './Components/Countdown';
-import {Link} from "react-scroll";
 import Toggle from './Components/Toggle';
 import Data from "./Data.json";
-import SliderPage from 'react-slider-page';
+import SliderPage from './Components/ReactSliderPage';
+import {Link} from "react-scroll";
 import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -27,6 +27,7 @@ function App() {
   let [colors,setColors] = useState(["#292300","#000000","#744703"]);
 
   function colorChange(){ 
+
     if(bgColors[0]==="#ffd700"){
       setBgColors(["#292300","#000000","#744703"]);
       setColors(["#ffd700","#ffffff","#f89f18"]);
@@ -36,8 +37,6 @@ function App() {
       setColors(["#292300","#000000","#744703"]);
     }
     
-
-    
   }
  
   return (
@@ -45,7 +44,7 @@ function App() {
       <ToastContainer/>
       <div className="navbar">
                     <div>
-                    <Link activeClass="active" to="1" spy={true} smooth={true} offset={0} duration={500} delay={0}><a href={"/"}>HOME</a></Link>
+                    <Link activeClass="" to="1" spy={true} smooth={true} offset={0} duration={500} delay={0}><a href={"/"}>HOME</a></Link>
                     </div>
                     <div>
                     <Link activeClass="active" to="2" spy={true} smooth={true} offset={0} duration={500} delay={0}><a href={"/"}>TABS</a></Link>
@@ -56,11 +55,9 @@ function App() {
                     <div onClick={colorChange} ><Toggle/></div>
                 </div>
         
-      <TitleSections color={colors[0]} background={bgColors[0]}/>
+     <TitleSections color={colors[0]} background={bgColors[0]}/>
       <AboutSection  color={colors[1]} background={bgColors[1]}/>
-      <SkillsSection color={colors[2]} background={bgColors[2]}/>
-
-      
+      <SkillsSection color={colors[2]} background={bgColors[2]}/>      
       
     </div>
   );

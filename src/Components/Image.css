@@ -13,6 +13,15 @@
         justify-items: center;
         align-items: center;
     }
+    .image__title {
+        font-size: 4vw;
+    }
+    .image__description {
+        font-size: 3vw;
+    }
+    .image__email {
+        font-size: 2vw;
+    }
 }
 
 .gallery-rows {
@@ -64,8 +73,8 @@
 }
 
 .image__title {
+    font-size: 100%;
     text-transform: lowercase;
-    font-size: 2em;
     font-weight: bold;
     height: 30%;
 }
@@ -77,8 +86,8 @@
 
 .image__description {
     text-transform: lowercase;
-    font-size: 1.25em;
     margin-top: 0.25em;
+    font-size: 100%;
     height: 30%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -86,7 +95,7 @@
 
 .image__email {
     text-transform: lowercase;
-    font-size: 1.25em;
+    font-size: 100%;
     margin-top: 0.25em;
     height: 10%;
     overflow: hidden;
