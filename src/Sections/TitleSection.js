@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import FullPage from "../Components/FullPage";
 import Data from "../Data.json";
-import {SocialIcon} from "react-social-icons";
 import "./TitleSections.css"
 import {Link} from "react-scroll";
 import Countdown from "../Components/Countdown";
