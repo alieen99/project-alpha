@@ -9,12 +9,10 @@
         flex-direction: row;
     }
     .comment--card {
-        margin: 2rem auto;
         display: flex;
         flex-direction: column;
         width: 100%;
         border-radius: 10px;
-        padding: 0.75rem;
     }
     .comment--card-image {
         border-radius: 8px;
@@ -37,16 +35,12 @@
         font-weight: 400;
         margin-top: 0.25em;
     }
-    .comment--card-form {
-        padding: 2rem 1rem 0;
-    }
     .input {
         display: flex;
         flex-direction: column-reverse;
         position: relative;
         padding-top: 1.5rem;
         margin-left: 3%;
-        margin-bottom: 5%;
     }
     /* .input+.input {
     margin-top: 1.5rem;
@@ -70,7 +64,7 @@
     }
     .comment-field {
         color: #8597a3;
-        height: 100px;
+        height: 50px;
         border: 0;
         z-index: 1;
         background-color: transparent;
@@ -123,7 +117,6 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: #fff;
         border-radius: 10px;
         padding: 0;
     }
@@ -135,22 +128,7 @@
         background-position: 0 5%;
         position: relative;
     }
-    .comment--card-heading {
-        position: absolute;
-        left: 3%;
-        font-size: 1.75rem;
-        font-weight: 700;
-        line-height: 1.222;
-    }
-    .comment--card-heading small {
-        display: block;
-        font-size: 0.75em;
-        font-weight: 400;
-        margin-top: 0.25em;
-    }
-    .comment--card-form {
-        padding: 2rem 1rem 0;
-    }
+    .comment--card-form {}
     .input {
         display: flex;
         flex-direction: column-reverse;
@@ -178,7 +156,6 @@
     }
     .comment-field {
         scroll-behavior: smooth;
-        height: 50px;
         border: 0;
         z-index: 1;
         background-color: transparent;
@@ -215,6 +192,7 @@
         color: #fff;
         border: 0;
         transition: 500ms;
+        margin-bottom: 2%;
     }
     .action-button:focus {
         outline: 5px black;

@@ -28,7 +28,7 @@ const Tab = styled.button`
   `}
 `;
 const ButtonGroup = styled.div`
-  margin-top:10px;
+  margin-top:8%;
   width:100%;
   display: flex;
   justify-content: center;
@@ -56,7 +56,6 @@ function TabGroup(props) {
           </Tab>
         ))}
       </ButtonGroup>
-      <p />
       <div className='content'>{active_content} </div>
     </>
   );

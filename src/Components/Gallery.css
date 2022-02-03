@@ -1,8 +1,21 @@
-.gallery-columns {
-    width: 75%;
-    min-width: 420px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-items: center;
-    align-items: center;
+@media only screen and (min-width: 600px) {
+    .gallery-columns {
+        width: 75%;
+        min-width: 380px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery-columns {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        align-items: center;
+    }
 }
