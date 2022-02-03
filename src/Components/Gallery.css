@@ -1,0 +1,8 @@
+.gallery-columns {
+    width: 75%;
+    min-width: 420px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+}

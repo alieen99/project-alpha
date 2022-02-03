@@ -1,0 +1,86 @@
+.gallery-columns {
+    width: 50%;
+    max-height: 370px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.gallery-rows {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 2.5%;
+}
+
+.image--gallery {
+    margin: 1%;
+    position: relative;
+    width: 95%;
+    height: fit-content;
+}
+
+.image__img {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+    box-shadow: 0 0 10 black;
+}
+
+.image__overlay:hover>* {
+    transform: translateY(0);
+}
+
+.image__title {
+    text-transform: lowercase;
+    font-size: 2em;
+    font-weight: bold;
+    height: 30%;
+}
+
+.image__title:first-letter,
+.image__description:first-letter {
+    text-transform: uppercase;
+}
+
+.image__description {
+    text-transform: lowercase;
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    height: 30%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.image__email {
+    text-transform: lowercase;
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    height: 10%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,73 @@
+{
+    "title": "Hello I'm Mohammad Ali",
+    "subtitle": "FrontEnd Developer | Designer | Engineer ",
+    "links": {
+        "github": "https://github.com/alieen99",
+        "instagram": "https://www.instagram.com/alieen.99",
+        "telegram": "https://t.me/alieen_99"
+    },
+    "sections": [{
+            "title": "About",
+            "items": [{
+                "type": "p",
+                "content": "I'm Mohammad Ali Noroozshad and I'm a full stack web developer.",
+                "content2": "I am a student of Electrical Engineering at the Iran University Of Science & Technology.",
+                "content3": "My hobby is reading books and watching movies, and I think these two make people grow a lot intellectually.",
+                "content4": "Another thing that makes me happy is solving problems and finding answers, which is why I love programming."
+            }],
+            "gallery": [
+                { "type": "image", "content": { "image": "images/1.jpg" } },
+                { "type": "image", "content": { "image": "images/2.jpg" } },
+                { "type": "image", "content": { "image": "images/3.jpg" } },
+                { "type": "image", "content": { "image": "images/4.jpg" } },
+                { "type": "image", "content": { "image": "images/5.jpg" } },
+                { "type": "image", "content": { "image": "images/7.jpg" } }
+            ]
+        },
+        {
+            "title": "Skills",
+            "items": [{
+                    "type": "card",
+                    "content": {
+                        "image": "https://img.icons8.com/dotty/500/000000/react.png",
+                        "title": "react"
+                    }
+                },
+                {
+                    "type": "card",
+                    "content": {
+                        "image": "https://img.icons8.com/ios/500/000000/javascript-logo.png",
+                        "title": "Javascript"
+                    }
+                },
+                {
+                    "type": "card",
+                    "content": {
+                        "image": "https://img.icons8.com/windows/512/000000/html-5.png",
+                        "title": "HTML"
+                    }
+                },
+                {
+                    "type": "card",
+                    "content": {
+                        "image": "https://img.icons8.com/ios/500/000000/css3.png",
+                        "title": "CSS"
+                    }
+                }
+
+            ]
+        }
+    ],
+    "down": {
+        "title": "down",
+        "image": "images/down.png"
+    },
+    "up": {
+        "title": "up",
+        "image": "images/up.png"
+    },
+    "cp": {
+        "title": "cp",
+        "image": "images/cp.png"
+    }
+}
