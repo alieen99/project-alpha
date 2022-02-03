@@ -21,7 +21,7 @@ class Comment extends Component{
           .then(res=>{
             console.log(res);
             console.log(res.data);
-            window.location = "/retrieve" //This line of code will redirect you once the submission is succeed
+            window.location = "/" //This line of code will redirect you once the submission is succeed
           }).catch(err=>console.log(err.message))
       }
     handleNameChange = event =>{
